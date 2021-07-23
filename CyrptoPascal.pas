@@ -6,8 +6,13 @@ uses
   System.NetEncoding, SysUtils, Classes;
 
 type
-  TCyrptoPascal = class
-  public
+
+  ICyrptoPascal = interface
+    function DecodeBase64(AText: string): string;
+    function EncodeBase64(AText: string): string;
+  end;
+
+  TCyrptoPascal = class(TInterfacedObject, ICyrptoPascal)
     function DecodeBase64(AText: string): string;
     function EncodeBase64(AText: string): string;
   end;
