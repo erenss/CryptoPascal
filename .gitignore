@@ -1,0 +1,11 @@
+
+*.~2~
+__history/
+CryptoPascal.dpr
+CryptoPascal.dproj
+CryptoPascal.dproj.local
+Main.dfm
+Main.pas
+*.~3~
+Win32/
+CryptoPascal.res
